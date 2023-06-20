@@ -11,3 +11,7 @@ const db = mongoose.connect(db_uri,()=>{
 app.listen(5000,()=>{
     console.log("server running....")
 })
+
+app.get("/",(req, resp)=>{
+    console.log(req.url)
+})
